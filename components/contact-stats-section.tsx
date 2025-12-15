@@ -188,14 +188,45 @@ export default function ContactStatsSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [selectedExam, setSelectedExam] = useState("")
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSuccess(true)
-    setTimeout(() => setIsSuccess(false), 3000)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          examType: examOptions.find((opt) => opt.value === selectedExam)?.label || "",
+        }),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setIsSuccess(true)
+        setFormData({ name: "", email: "", phone: "", message: "" })
+        setSelectedExam("")
+        setTimeout(() => setIsSuccess(false), 3000)
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -228,11 +259,11 @@ export default function ContactStatsSection() {
             <p className="text-slate-500 text-sm mb-6">Fill out the form and we'll get back to you within 24 hours.</p>
 
             <form onSubmit={handleSubmit} className="space-y-5">
-              <EnhancedInput icon={User} type="text" placeholder="Your Name" required />
-              <EnhancedInput icon={Mail} type="email" placeholder="Your Email" required />
-              <EnhancedInput icon={Phone} type="tel" placeholder="Phone Number (Optional)" />
+              <EnhancedInput icon={User} type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleInputChange} required />
+              <EnhancedInput icon={Mail} type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleInputChange} required />
+              <EnhancedInput icon={Phone} type="tel" name="phone" placeholder="Phone Number (Optional)" value={formData.phone} onChange={handleInputChange} />
               <CustomDropdown value={selectedExam} onChange={setSelectedExam} />
-              <EnhancedTextarea icon={MessageSquare} placeholder="Your Message" required />
+              <EnhancedTextarea icon={MessageSquare} name="message" placeholder="Your Message" value={formData.message} onChange={handleInputChange} required />
 
               <Button
                 type="submit"

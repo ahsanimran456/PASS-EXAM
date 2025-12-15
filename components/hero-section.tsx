@@ -37,14 +37,15 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-foreground mb-6 animate-fade-in-up text-balance leading-tight">
-          HIRE OUR BEST PROFESSIONALS
-          <br />
-          <span className="text-primary">TO TAKE MY ONLINE EXAM FOR ME!</span>
+        <h1 className="font-serif font-extrabold text-foreground mb-8 animate-fade-in-up leading-snug drop-shadow-lg">
+          <span className="block text-3xl md:text-4xl lg:text-5xl mb-3">HIRE OUR BEST PROFESSIONALS</span>
+          <span className="block text-primary text-xl md:text-2xl lg:text-3xl tracking-wide">
+            TO TAKE MY ONLINE EXAMS & ONLINE CLASSES FOR ME!
+          </span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-200 text-pretty leading-relaxed font-medium">
-          Avail the best Proctored Online Exam Help Services with the aim of achieving your academic goals with top
+          Avail the best Proctored Online Exam & Classes Help Services with the aim of achieving your academic goals with top
           scores!
         </p>
 

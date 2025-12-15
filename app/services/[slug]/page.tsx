@@ -25,7 +25,7 @@ const servicesData: Record<
     heroDescription:
       "Get expert assistance for your online exams with a proven 99% success rate. Pay only after successful completion!",
     fullDescription:
-      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate. We specialize in helping students pass online tests with confidence. Unlike others, we never ask for upfront charges — you only pay after your exam is successfully completed. Our team of experienced professionals understands the pressure of online examinations and provides comprehensive support to ensure your success.",
+      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate — GED, TEAS, HESI, Praxis, CLEP and more. Unlike others, we never ask for upfront charges — you only pay after your exam is successfully completed. Our team of experienced professionals understands the pressure of online examinations and provides comprehensive support to ensure your success.",
     image: "/classroom-teaching-students-learning.jpg",
     features: [
       "24/7 Expert Support Available",
@@ -68,7 +68,7 @@ const servicesData: Record<
     heroDescription:
       "Stay on track with personalized tutoring and live expert assistance. Achieve better grades with our dedicated support!",
     fullDescription:
-      "Stay on track with your online classes and improve your grades with personalized tutoring. From live expert assistance to course support, we help students learn smarter, manage deadlines, and succeed online. With a 99% success rate, we ensure real results, and you only pay after your class is successfully completed. Our tutors work with you throughout the semester to ensure consistent academic improvement.",
+      "Stay on track with your online classes and improve your grades with personalized tutoring — Study.com, Sophia Learning, Straighterline and more. We help students learn smarter, manage deadlines, and succeed online. With a 99% success rate, you only pay after your class is successfully completed. Our tutors work with you throughout the semester to ensure consistent academic improvement.",
     image: "/students-group-study-collaboration.jpg",
     features: [
       "Live One-on-One Sessions",
@@ -150,11 +150,11 @@ const servicesData: Record<
     ],
   },
   "certification-tests": {
-    title: "Certification Tests",
+    title: "Certification Exams",
     heroDescription:
       "Expert preparation for IT certifications, professional licenses, and academic tests. Succeed with our specialized support!",
     fullDescription:
-      "Prepare for certification tests with our specialized tutors who know exactly what it takes to succeed. Whether it's IT certifications, professional licenses, or academic tests, our experts provide comprehensive preparation and support throughout your journey. We understand the specific requirements of various certification exams and tailor our approach to maximize your chances of success.",
+      "Prepare for certification exams with our specialized tutors who know exactly what it takes to succeed — PMP, CompTIA, Microsoft certification and more. Our experts provide comprehensive preparation and support throughout your journey. We tailor our approach to maximize your chances of success.",
     image: "/professional-certification-exam-computer.jpg",
     features: [
       "IT Certification Expertise",
@@ -190,9 +190,9 @@ const servicesData: Record<
   },
   "proctored-exams": {
     title: "Proctored Exams",
-    heroDescription: "Navigate proctored exams with confidence. Comprehensive support for all exam types and formats!",
+    heroDescription: "Navigate proctored exams with confidence — Lockdown Browser, Honorlock, ETS, Proctor U and more!",
     fullDescription:
-      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats. We understand the unique challenges of proctored testing and offer specialized assistance to ensure you perform at your best. Whether it's camera-monitored, browser-locked, or live-proctored exams, we have strategies and support to help you succeed.",
+      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats — Lockdown Browser, Honorlock, ETS, Proctor U and more. We offer specialized assistance to ensure you perform at your best.",
     image: "/online-proctored-exam-setup.jpg",
     features: [
       "All Proctoring Platforms",
@@ -222,52 +222,6 @@ const servicesData: Record<
         question: "Is your service compliant with exam rules?",
         answer:
           "We focus on legitimate preparation and study support that helps you perform your best within exam guidelines.",
-      },
-    ],
-  },
-  "academic-consulting": {
-    title: "Academic Consulting",
-    heroDescription:
-      "Personalized academic guidance from experienced consultants. Make informed decisions for your future!",
-    fullDescription:
-      "Receive personalized academic guidance from experienced consultants who understand your goals. From course selection to career planning, we help you make informed decisions that align with your aspirations and set you up for long-term success. Our consultants have years of experience in higher education and can help you navigate complex academic decisions.",
-    image: "/academic-advisor-consultation-meeting.jpg",
-    features: [
-      "Career Path Planning",
-      "Course Selection Guidance",
-      "Graduate School Prep",
-      "Academic Strategy Development",
-      "Time Management Coaching",
-      "Goal Setting & Achievement",
-    ],
-    benefits: [
-      {
-        icon: Award,
-        title: "Expert Advisors",
-        description: "Consultants with advanced degrees and industry experience.",
-      },
-      { icon: Users, title: "Personalized Plans", description: "Customized guidance based on your unique goals." },
-      { icon: Clock, title: "Long-Term Support", description: "Ongoing guidance throughout your academic journey." },
-      {
-        icon: MessageCircle,
-        title: "Regular Check-ins",
-        description: "Scheduled sessions to track progress and adjust plans.",
-      },
-    ],
-    faqs: [
-      {
-        question: "What does academic consulting include?",
-        answer:
-          "Our consulting covers course selection, major/minor decisions, graduate school preparation, career planning, and overall academic strategy.",
-      },
-      {
-        question: "How often do I meet with my consultant?",
-        answer: "Meeting frequency is customized to your needs, typically ranging from weekly to monthly sessions.",
-      },
-      {
-        question: "Can you help with graduate school applications?",
-        answer:
-          "Yes, we provide comprehensive support including school selection, application strategy, essay review, and interview preparation.",
       },
     ],
   },

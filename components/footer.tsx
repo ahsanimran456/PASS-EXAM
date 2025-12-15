@@ -67,7 +67,7 @@ export default function Footer() {
                 <Image src="/logo.png" alt="Top Exam Helpers Logo" width={80} height={80} className="drop-shadow-lg" />
               </div>
               <p className="text-muted-foreground leading-relaxed mb-8 text-pretty">
-                Avail the best Proctored Online Exam Help Services with the aim of achieving your academic goals with
+                Avail the best Proctored Online Exam & Classes Help Services with the aim of achieving your academic goals with
                 top scores!
               </p>
               <div className="flex gap-3">
@@ -112,19 +112,23 @@ export default function Footer() {
                 Our Services
               </h3>
               <ul className="space-y-4">
-                {["Online Exam Help", "Proctored Exam Help", "GED Exam Help", "TEAS Exam Help", "ATI Exam Help"].map(
-                  (service) => (
-                    <li key={service}>
-                      <Link
-                        href="/services"
-                        className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 group"
-                      >
-                        <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-primary" />
-                        <span className="group-hover:translate-x-1 transition-transform duration-300">{service}</span>
-                      </Link>
-                    </li>
-                  ),
-                )}
+                {[
+                  { title: "Online Exam Help", slug: "online-exam-help" },
+                  { title: "Online Classes", slug: "online-classes" },
+                  { title: "Assignment Help", slug: "assignment-help" },
+                  { title: "Certification Exams", slug: "certification-tests" },
+                  { title: "Proctored Exams", slug: "proctored-exams" },
+                ].map((service) => (
+                  <li key={service.slug}>
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 group"
+                    >
+                      <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-primary" />
+                      <span className="group-hover:translate-x-1 transition-transform duration-300">{service.title}</span>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -137,24 +141,24 @@ export default function Footer() {
               <ul className="space-y-5">
                 <li>
                   <a
-                    href="tel:+13126802390"
+                    href="tel:+14795626268"
                     className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-all duration-300 group"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300 group-hover:scale-110 border border-primary/20">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="font-medium">+1 (312) 680-2390</span>
+                    <span className="font-medium">+1 (479) 562-6268</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:support@passmyexamnow.com"
+                    href="mailto:info@topexamhelpers.com"
                     className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-all duration-300 group"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300 group-hover:scale-110 border border-primary/20">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="font-medium break-all">support@passmyexamnow.com</span>
+                    <span className="font-medium break-all">info@topexamhelpers.com</span>
                   </a>
                 </li>
                 <li className="flex items-start gap-4 text-muted-foreground">

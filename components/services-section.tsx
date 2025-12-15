@@ -11,14 +11,14 @@ const services = [
     title: "Online Exam Help",
     slug: "online-exam-help",
     description:
-      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate. We specialize in helping students pass online tests with confidence.",
+      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate — GED, TEAS, HESI, Praxis, CLEP and more.",
     image: "/classroom-teaching-students-learning.jpg",
   },
   {
     title: "Online Classes",
     slug: "online-classes",
     description:
-      "Stay on track with your online classes and improve your grades with personalized tutoring and live expert assistance.",
+      "Stay on track with your online classes and improve your grades with personalized tutoring — Study.com, Sophia Learning, Straighterline and more.",
     image: "/students-group-study-collaboration.jpg",
   },
   {
@@ -29,24 +29,18 @@ const services = [
     image: "/student-writing-assignment-desk.jpg",
   },
   {
-    title: "Certification Tests",
+    title: "Certification Exams",
     slug: "certification-tests",
     description:
-      "Prepare for certification tests with our specialized tutors who know exactly what it takes to succeed.",
+      "Prepare for certification exams with our specialized tutors who know exactly what it takes to succeed — PMP, CompTIA, Microsoft certification and more.",
     image: "/professional-certification-exam-computer.jpg",
   },
   {
     title: "Proctored Exams",
     slug: "proctored-exams",
     description:
-      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats.",
+      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats — Lockdown Browser, Honorlock, ETS, Proctor U and more.",
     image: "/online-proctored-exam-setup.jpg",
-  },
-  {
-    title: "Academic Consulting",
-    slug: "academic-consulting",
-    description: "Receive personalized academic guidance from experienced consultants who understand your goals.",
-    image: "/academic-advisor-consultation-meeting.jpg",
   },
 ]
 

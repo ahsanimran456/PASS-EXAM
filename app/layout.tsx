@@ -20,10 +20,15 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: "Pass My Exam Now - Secure Your A-Grade",
+  title: "Top Exam Helpers - Pay After Success",
   description:
-    "Avail the best Proctored Online Exam Help Services with the aim of achieving your academic goals with top scores!",
+    "Avail the best Proctored Online Exam & Classes Help Services with the aim of achieving your academic goals with top scores!",
   generator: "v0.app",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 }
 
 export default function RootLayout({

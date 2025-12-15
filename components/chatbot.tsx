@@ -10,72 +10,87 @@ const faqData = [
   {
     keywords: ["price", "cost", "how much", "pricing", "fee", "charge", "rate"],
     answer:
-      "Our pricing varies based on the exam type and complexity. Generally, prices start from $50 for basic assignments. For a personalized quote, please contact us on WhatsApp or fill out our consultation form.",
+      "Our pricing varies based on the service type and complexity. We offer competitive rates and you only pay after successful completion! For a personalized quote, contact us on WhatsApp at +1 (479) 562-6268.",
   },
   {
     keywords: ["service", "what do you", "offer", "help with", "do you do"],
     answer:
-      "We offer professional exam help services including: Online Proctored Exams, GED & HiSET Tests, Professional Certifications (CompTIA, PMP, AWS), College Entrance Exams, Academic Assignments, and Live Class Support. Our US-based tutors have doctorate-level expertise.",
+      "We offer: 1) Online Exam Help (GED, TEAS, HESI, Praxis, CLEP), 2) Online Classes (Study.com, Sophia Learning, Straighterline), 3) Assignment Help, 4) Certification Exams (PMP, CompTIA, Microsoft), 5) Proctored Exams (Lockdown Browser, Honorlock, ETS, Proctor U). All with a 99% success rate!",
   },
   {
     keywords: ["how it work", "process", "how does", "steps", "procedure"],
     answer:
-      "It's simple! 1) Fill out our Quick Consult form or message us on WhatsApp. 2) Share your exam details. 3) We match you with an expert tutor. 4) Our tutor helps you prepare or takes the exam on your behalf. 5) You get your results!",
+      "It's simple! 1) Contact us via WhatsApp or fill our Quick Consult form. 2) Share your exam/class details. 3) We match you with an expert. 4) Get your work done with guaranteed results. 5) Pay only after successful completion!",
   },
   {
     keywords: ["safe", "secure", "privacy", "confidential", "caught", "detect"],
     answer:
-      "We prioritize your privacy and security. All communications are encrypted, and we use advanced techniques to ensure undetectable assistance. Your personal information is never shared with third parties.",
+      "Your privacy is our priority! All communications are encrypted and confidential. We use secure methods for all our services. Your personal information is never shared with third parties.",
   },
   {
     keywords: ["guarantee", "pass", "success", "money back", "refund"],
     answer:
-      "We have a 98% success rate! We offer a satisfaction guarantee - if we don't deliver as promised, you're eligible for a refund. Our expert tutors are committed to your success.",
+      "We have a proven 99% success rate! Plus, you only pay after your exam or class is successfully completed. We offer a money-back guarantee if we don't deliver as promised.",
   },
   {
     keywords: ["contact", "reach", "phone", "email", "whatsapp", "talk"],
     answer:
-      "You can reach us via: WhatsApp: +1 (312) 680-2390, Email: support@passmyexamnow.com, or use our Quick Consult form on the homepage. We respond within minutes!",
+      "Reach us anytime! WhatsApp: +1 (479) 562-6268, Email: info@topexamhelpers.com. We respond within minutes and offer 24/7 support!",
   },
   {
     keywords: ["tutor", "expert", "who", "qualified", "teacher"],
     answer:
-      "Our tutors are highly qualified US-based professionals, including doctorate-level experts in various fields. They have years of experience helping students with exams and certifications.",
+      "Our team consists of highly qualified professionals with expertise in various academic fields. They have years of experience helping students achieve top scores in exams and online classes.",
   },
   {
     keywords: ["time", "how long", "duration", "fast", "quick", "urgent", "deadline"],
     answer:
-      "We handle both scheduled and urgent requests! For last-minute exams, contact us immediately on WhatsApp. We can often accommodate same-day requests depending on availability.",
+      "We handle both scheduled and urgent requests! For last-minute exams or classes, contact us immediately on WhatsApp at +1 (479) 562-6268. We can often accommodate same-day requests!",
   },
   {
-    keywords: ["payment", "pay", "method", "card", "paypal"],
+    keywords: ["payment", "pay", "method", "card", "paypal", "upfront"],
     answer:
-      "We accept multiple payment methods including credit/debit cards, PayPal, and other secure options. Payment details are shared after consultation to ensure transparency.",
+      "Great news - NO upfront payment required! You only pay after your exam or class is successfully completed. We accept credit/debit cards, PayPal, and other secure payment methods.",
   },
   {
-    keywords: ["proctored", "proctor", "lockdown", "webcam", "monitored"],
+    keywords: ["proctored", "proctor", "lockdown", "webcam", "monitored", "honorlock", "proctor u", "ets"],
     answer:
-      "Yes! We specialize in proctored exams including those with webcam monitoring, lockdown browsers, and AI proctoring. Our experts use proven methods to provide discreet assistance.",
+      "Yes! We specialize in all proctored exam formats including Lockdown Browser, Honorlock, ETS, and Proctor U. Our experts provide comprehensive support for all monitoring types.",
   },
   {
-    keywords: ["ged", "hiset", "high school", "equivalency"],
+    keywords: ["ged", "teas", "hesi", "praxis", "clep"],
     answer:
-      "We offer comprehensive GED and HiSET exam support. Our tutors can help you prepare or provide direct exam assistance. These are among our most popular services!",
+      "We offer expert help for GED, TEAS, HESI, Praxis, CLEP and more! Our specialists have helped thousands of students pass these exams with top scores. Contact us for personalized assistance!",
   },
   {
-    keywords: ["certification", "comptia", "aws", "pmp", "cisco", "professional"],
+    keywords: ["certification", "comptia", "microsoft", "pmp", "professional cert"],
     answer:
-      "We help with various professional certifications including CompTIA (A+, Network+, Security+), AWS, PMP, CISCO, and more. Our certified experts ensure you pass on your first attempt.",
+      "We help with professional certifications including PMP, CompTIA (A+, Network+, Security+), Microsoft certifications, and more. Our certified experts ensure you pass on your first attempt!",
+  },
+  {
+    keywords: ["class", "classes", "online class", "study.com", "sophia", "straighterline", "course"],
+    answer:
+      "We provide full support for online classes on Study.com, Sophia Learning, Straighterline, and more! From assignments to quizzes to final exams - we help you succeed throughout your course.",
+  },
+  {
+    keywords: ["assignment", "homework", "essay", "paper", "project"],
+    answer:
+      "Our Assignment Help service covers essays, research papers, projects, and homework across all subjects. We deliver high-quality work on time with guaranteed grades!",
   },
   {
     keywords: ["hello", "hi", "hey", "good morning", "good evening"],
     answer:
-      "Hello! Welcome to Pass My Exam Now. I'm here to answer your questions about our exam help services. How can I assist you today?",
+      "Hello! 👋 Welcome to Top Exam Helpers. I'm here to answer your questions about our exam and class help services. How can I assist you today?",
   },
   {
     keywords: ["thank", "thanks", "appreciate"],
     answer:
-      "You're welcome! If you have any more questions, feel free to ask. For personalized assistance, you can always reach us on WhatsApp!",
+      "You're welcome! If you have any more questions, feel free to ask. For personalized assistance, reach us on WhatsApp at +1 (479) 562-6268. We're here to help you succeed!",
+  },
+  {
+    keywords: ["why", "choose", "best", "different", "special"],
+    answer:
+      "Why choose Top Exam Helpers? ✓ 99% Success Rate ✓ No Upfront Payment ✓ Pay After Completion ✓ 24/7 Support ✓ Expert Professionals ✓ Money-back Guarantee. We're committed to your academic success!",
   },
 ]
 
@@ -83,9 +98,9 @@ const faqData = [
 const quickQuestions = [
   "What services do you offer?",
   "How does it work?",
-  "What are your prices?",
-  "Is it safe and secure?",
-  "How can I contact you?",
+  "Do you help with proctored exams?",
+  "What about online classes?",
+  "Why choose Top Exam Helpers?",
 ]
 
 interface Message {
@@ -129,7 +144,7 @@ export default function Chatbot() {
     }
 
     // Default response for unrecognized questions
-    return "I'm not sure about that specific question. For detailed assistance, please contact our team on WhatsApp - they'll be happy to help you personally!"
+    return "I'm not sure about that specific question. For personalized assistance, please contact our team on WhatsApp at +1 (479) 562-6268 or email info@topexamhelpers.com - we'll be happy to help!"
   }
 
   const handleSend = (text?: string) => {
@@ -304,7 +319,7 @@ export default function Chatbot() {
 
         {/* WhatsApp redirect */}
         <a
-          href="https://wa.me/13126802390"
+          href="https://wa.me/14795626268"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2.5 sm:py-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white text-xs sm:text-sm font-semibold hover:from-[#1fb855] hover:to-[#0d7a6e] transition-all group flex-shrink-0"

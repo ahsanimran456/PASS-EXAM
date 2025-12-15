@@ -14,12 +14,12 @@ import Chatbot from "@/components/chatbot"
 const contactInfo = [
   {
     icon: Mail,
-    title: "support@passmyexamnow.com",
+    title: "info@topexamhelpers.com",
     description: "Drop us a message anytime, we'll get back to you within 24 hours",
   },
   {
     icon: Phone,
-    title: "+1 (312) 680-2390",
+    title: "+1 (479) 562-6268",
     description: "Available Mon-Sun, 24/7",
   },
   {
@@ -66,14 +66,41 @@ function EnhancedTextarea({
 export default function ContactUsPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSuccess(true)
-    setTimeout(() => setIsSuccess(false), 3000)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setIsSuccess(true)
+        setFormData({ name: "", email: "", phone: "", message: "" })
+        setTimeout(() => setIsSuccess(false), 3000)
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -135,10 +162,10 @@ export default function ContactUsPage() {
               <h3 className="text-2xl font-bold text-foreground mb-6 uppercase">Send Us A Message</h3>
 
               <form onSubmit={handleSubmit} className="space-y-5">
-                <EnhancedInput icon={User} type="text" placeholder="Name" required />
-                <EnhancedInput icon={Mail} type="email" placeholder="Email" required />
-                <EnhancedInput icon={Phone} type="tel" placeholder="Phone" />
-                <EnhancedTextarea icon={MessageSquare} placeholder="Message" required />
+                <EnhancedInput icon={User} type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} required />
+                <EnhancedInput icon={Mail} type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} required />
+                <EnhancedInput icon={Phone} type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleInputChange} />
+                <EnhancedTextarea icon={MessageSquare} name="message" placeholder="Message" value={formData.message} onChange={handleInputChange} required />
 
                 <Button
                   type="submit"

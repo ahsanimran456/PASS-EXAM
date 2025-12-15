@@ -42,22 +42,22 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center text-sm relative z-10">
           <div className="flex items-center gap-8">
             <a
-              href="tel:+13126802390"
+              href="tel:+14795626268"
               className="flex items-center gap-2.5 hover:text-primary transition-all duration-300 group"
             >
               <div className="w-8 h-8 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <Phone className="w-4 h-4 text-primary group-hover:animate-bounce" />
               </div>
-              <span className="font-semibold tracking-wide">+1 (312) 680-2390</span>
+              <span className="font-semibold tracking-wide">+1 (479) 562-6268</span>
             </a>
             <a
-              href="mailto:support@passmyexamnow.com"
+              href="mailto:info@topexamhelpers.com"
               className="flex items-center gap-2.5 hover:text-primary transition-all duration-300 group"
             >
               <div className="w-8 h-8 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-3">
                 <Mail className="w-4 h-4 text-primary" />
               </div>
-              <span className="font-semibold tracking-wide">support@passmyexamnow.com</span>
+              <span className="font-semibold tracking-wide">info@topexamhelpers.com</span>
             </a>
           </div>
           <div className="flex items-center gap-2.5 bg-gradient-to-r from-primary/15 to-primary/5 px-5 py-2 rounded-full border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
@@ -135,7 +135,7 @@ export default function Navbar() {
               asChild
               className="relative bg-gradient-to-r from-primary via-primary to-primary/80 hover:from-primary/90 hover:via-primary hover:to-primary text-primary-foreground rounded-full px-7 py-6 hidden sm:flex items-center gap-2.5 shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/40 transition-all duration-500 hover:scale-105 overflow-hidden group"
             >
-              <a href="https://wa.me/13126802390" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/14795626268" target="_blank" rel="noopener noreferrer">
                 {/* Shine animation */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                 <MessageCircle className="w-5 h-5 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
@@ -200,7 +200,7 @@ export default function Navbar() {
               asChild
               className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground rounded-2xl w-full mt-4 py-7 font-bold text-base shadow-xl shadow-primary/30"
             >
-              <a href="https://wa.me/13126802390" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/14795626268" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp Us
               </a>

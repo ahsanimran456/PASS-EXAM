@@ -12,7 +12,7 @@ const services = [
     title: "Online Exam Help",
     slug: "online-exam-help",
     description:
-      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate. We specialize in helping students pass online tests with confidence. Unlike others, we never ask for upfront charges, you only pay after your exam is successfully completed.",
+      "Looking for reliable online exam help? Our expert tutors help students through exams with a proven 99% success rate — GED, TEAS, HESI, Praxis, CLEP and more. Unlike others, we never ask for upfront charges, you only pay after your exam is successfully completed.",
     image: "/classroom-teaching-students-learning.jpg",
     features: ["24/7 Support", "Expert Tutors", "Money-back Guarantee"],
   },
@@ -20,7 +20,7 @@ const services = [
     title: "Online Classes",
     slug: "online-classes",
     description:
-      "Stay on track with your online classes and improve your grades with personalized tutoring. From live Expert assistance to course support, we help students learn smarter, manage deadlines, and succeed online. With a 99% success rate, we ensure real results, and you only pay after your class is successfully completed.",
+      "Stay on track with your online classes and improve your grades with personalized tutoring — Study.com, Sophia Learning, Straighterline and more. We help students learn smarter, manage deadlines, and succeed online. With a 99% success rate, you only pay after your class is successfully completed.",
     image: "/students-group-study-collaboration.jpg",
     features: ["Live Sessions", "Course Support", "Deadline Management"],
   },
@@ -33,10 +33,10 @@ const services = [
     features: ["Original Work", "On-time Delivery", "Free Revisions"],
   },
   {
-    title: "Certification Tests",
+    title: "Certification Exams",
     slug: "certification-tests",
     description:
-      "Prepare for certification tests with our specialized tutors who know exactly what it takes to succeed. Whether it's IT certifications, professional licenses, or academic tests, our experts provide comprehensive preparation and support throughout your journey.",
+      "Prepare for certification exams with our specialized tutors who know exactly what it takes to succeed — PMP, CompTIA, Microsoft certification and more. Our experts provide comprehensive preparation and support throughout your journey.",
     image: "/professional-certification-exam-computer.jpg",
     features: ["IT Certifications", "Professional Licenses", "Full Preparation"],
   },
@@ -44,17 +44,9 @@ const services = [
     title: "Proctored Exams",
     slug: "proctored-exams",
     description:
-      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats. We understand the unique challenges of proctored testing and offer specialized assistance to ensure you perform at your best.",
+      "Navigate proctored exams with confidence. Our experts provide comprehensive support for all exam types and formats — Lockdown Browser, Honorlock, ETS, Proctor U and more. We offer specialized assistance to ensure you perform at your best.",
     image: "/online-proctored-exam-setup.jpg",
     features: ["All Formats", "Specialized Support", "Exam Strategies"],
-  },
-  {
-    title: "Academic Consulting",
-    slug: "academic-consulting",
-    description:
-      "Receive personalized academic guidance from experienced consultants who understand your goals. From course selection to career planning, we help you make informed decisions that align with your aspirations and set you up for long-term success.",
-    image: "/academic-advisor-consultation-meeting.jpg",
-    features: ["Career Planning", "Course Selection", "Personalized Guidance"],
   },
 ]
 
@@ -65,7 +57,7 @@ export default function ServicesPage() {
 
       <PageHero
         title="OUR SERVICES"
-        description="Avail the best Proctored Online Exam Help Services with the aim of achieving your academic goals with top scores!"
+        description="Avail the best Proctored Online Exam & Classes Help Services with the aim of achieving your academic goals with top scores!"
         primaryButton={{ label: "About Us", href: "/about" }}
         secondaryButton={{ label: "Contact Us", href: "/contact-us" }}
       />

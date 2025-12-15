@@ -8,6 +8,7 @@ import CTASection from "@/components/cta-section"
 import Footer from "@/components/footer"
 import WhatsAppButton from "@/components/whatsapp-button"
 import Chatbot from "@/components/chatbot"
+import WelcomePopup from "@/components/welcome-popup"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Footer />
       <WhatsAppButton />
       <Chatbot />
+      <WelcomePopup />
     </main>
   )
 }
