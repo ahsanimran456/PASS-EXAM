@@ -76,7 +76,7 @@ export default function Navbar() {
           "sticky top-0 z-50 transition-all duration-700 ease-out",
           isScrolled
             ? "bg-background/70 backdrop-blur-2xl shadow-2xl shadow-primary/5 py-3 border-b border-primary/10"
-            : "bg-background/90 backdrop-blur-sm py-5",
+            : "bg-background/90 backdrop-blur-sm py-2",
         )}
       >
         {/* Animated gradient line under navbar */}
@@ -95,8 +95,8 @@ export default function Navbar() {
               <Image
                 src="/logo.png"
                 alt="Top Exam Helpers Logo"
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 className="relative z-10 transition-all duration-500 group-hover:scale-110 drop-shadow-lg"
               />
             </div>
